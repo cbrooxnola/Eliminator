@@ -22,3 +22,8 @@ h1 {
 table {
   border: solid 2px black;
 }
+.makingPicks {
+  display: flex;
+  flex-wrap: wrap;
+  float: right;
+}

@@ -1,4 +1,4 @@
-let teams = ['Buffalo Bills', 'Miami Dolphins', 'New England Patriots', 'New York Jets',
+let teams = [['Buffalo Bills', 'Miami Dolphins', 'New England Patriots', 'New York Jets',
               'Baltimore Ravens', 'Cincinatti Bengals', 'Cleveland Browns', 'Pittsburgh Steelers',
               'Houston Texans', 'Indianapolis Colts', 'Jacksonville Jaguars', 'Tennessee Titans',
               'Denver Broncos', 'Kansas Ciy Chiefs', 'Las Vegas Raiders', 'San Diego Chargers',
@@ -6,8 +6,17 @@ let teams = ['Buffalo Bills', 'Miami Dolphins', 'New England Patriots', 'New Yor
               'Chicago Bears', 'Detroit Lions', 'Green Bat Packers', 'Minnesota Vikings',
               'Atlanta Falcons', 'Carolina Panthers', 'New Orleans Saints', 'Tampa Bay Buccaneers',
               'Arizona Cardinals', 'Los Angeles Rams', 'San Francisco 49ers', 'Seattle Seahawks'
-]
+], {mama: 'no'}, {dada: 'no'}];
 
-let rowTeam = document.querySelector('rowTeam');
-console.log(rowTeam);
+const mamaNow = document.querySelector('#mamaNow');
+const dadaNow = document.querySelector('dadaNow');
 
+
+const rowTeam = document.querySelector('.rowTeam');
+function renderTeams(){
+  const showTeams = teams[0].map((elem) => {
+    return `${teams[0].elem}`;
+});
+  rowTeam.innerHTML = showTeams;
+}
+renderTeams();
