@@ -15,7 +15,7 @@ const dadaNow = document.querySelector('dadaNow');
 const rowTeam = document.querySelector('.rowTeam');
 function renderTeams(){
   const showTeams = teams[0].map((elem) => {
-    return `${teams[0].elem}`;
+    return `${elem}`;
 });
   rowTeam.innerHTML = showTeams;
 }
