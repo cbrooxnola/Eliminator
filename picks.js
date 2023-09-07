@@ -11,6 +11,10 @@ let teams = [['Buffalo Bills', 'Miami Dolphins', 'New England Patriots', 'New Yo
 const mamaNow = document.querySelector('#mamaNow');
 const dadaNow = document.querySelector('dadaNow');
 
+let undefeated = teams;
+let winless = teams;
+const winlessHTML = document.querySelector('.remainW');
+const undefeatedHTML = document.querySelector('.remainU');
 
 const rowTeam = document.querySelector('.rowTeam');
 function renderTeams(){
@@ -18,5 +22,9 @@ function renderTeams(){
     return `${elem}`;
 });
   rowTeam.innerHTML = showTeams;
+  winlessHTML.innerHTML = showTeams;
+  undefeatedHTML.innerHTML = showTeams;
 }
 renderTeams();
+
+
